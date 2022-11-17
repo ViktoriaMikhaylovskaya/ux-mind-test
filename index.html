@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="styles/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/svg" sizes="32x32" href="favicon.svg">
+        <title>Bankin'</title>
+    </head>
+    <body>
+        <aside class="aside">
+            <nav class="aside-nav aside-nav--opened aside-nav--nojs">
+                <div class="aside-nav__wrapper">
+                    <a class="aside-nav__logo" href="#">
+                        <img src="./img/logo.svg" alt="Логотип">
+                    </a>
+                    <button class="aside-nav__button aside-nav__toggle" type="button">
+                        <span class="visually-hidden">Открыть меню</span>
+                    </button>
+                    <ul class="aside-nav__list">
+                        <li class="aside-nav__item">
+                            <a class="aside-nav__link aside-nav__link--active" href="#">
+                                <img src="./img/menu/home.svg" alt="Иконка домика">
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        <li class="aside-nav__item">
+                            <a class="aside-nav__link" href="#">
+                                <img src="./img/menu/products.svg" alt="Раздел настроек">
+                                <p>Products</p>
+                            </a>
+                        </li>
+                        <li class="aside-nav__item">
+                            <a class="aside-nav__link" href="#">
+                                <img src="./img/menu/customers.svg" alt="Раздел настроек">
+                                <p>Customers</p>
+                            </a> 
+                        </li>
+                        <li class="aside-nav__item">
+                            <a class="aside-nav__link" href="#">
+                                <img src="./img/menu/shop.svg" alt="Раздел настроек">
+                                <p>Shop</p>
+                            </a>
+                        </li>
+                        <li class="aside-nav__item">
+                            <a class="aside-nav__link" href="#">
+                                <img src="./img/menu/income.svg" alt="Раздел настроек">
+                                <p>Income</p>
+                            </a>
+                        </li>
+                        <li class="aside-nav__item">
+                            <a class="aside-nav__link" href="#">
+                                <img src="./img/menu/promotes.svg" alt="Раздел настроек">
+                                <p>Promotes</p>
+                            </a>
+                        </li>
+                    </ul>
+                
+                    <ul class="aside-nav__list aside-nav__list--bottom">
+                        <li class="aside-nav__item aside-nav__item--bottom">
+                            <a class="aside-nav__link" href="#">
+                                <img src="./img/menu/settings.svg" alt="Раздел настроек">
+                                <p>Settings</p>
+                            </a>
+                        </li>
+                        <li class="aside-nav__item aside-nav__item--bottom">
+                            <a class="aside-nav__link" href="#">
+                                <img src="./img/menu/headphones.svg" alt="Раздел настроек">
+                                <p>Help & Getting Started</p>
+                            </a>
+                        </li>
+                        <li class="aside-nav__item aside-nav__item--bottom">
+                            <a class="aside-nav__link" href="#">
+                                <img src="./img/menu/exit.svg" alt="Раздел настроек">
+                                <p>Log Out</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <div class="content-wrapper">
+            <header class="header">
+                <div class="header__search search">
+                    <input class="search__field" type='text' placeholder="Search" id="search">
+                    <button class="search__button" type="button">
+                        <img src="./img/plus.svg" alt="Поиск">
+                    </button>
+                </div>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <button class="header__nav-button button" type="button">
+                            <img class="header__nav-icon" src="./img/message.svg" alt="Входящие сообщения">
+                        </button>
+                    </li>
+                    <li class="header__nav-item">
+                        <button class="header__nav-button button" type="button">
+                            <img class="header__nav-icon" src="./img/pencil.svg" alt="Написать сообщение">
+                        </button>
+                    </li>
+                    <li class="header__nav-item">
+                        <button class="header__nav-button button" type="button">
+                            <img class="header__nav-icon" src="./img/user-photo.png" alt="Личная страница">
+                        </button>
+                    </li>
+                </ul>
+            </header>
+
+            <main class="main">
+                <h1 class="visually-hidden">Bankin'</h1>
+                <h2 class="page-title">Dashboard</h2>
+
+                <section class="overviews">
+                    <div class="overviews__header">
+                        <h3 class="overviews__title">Overview</h3>
+                        <select class="overviews__filter filter">
+                            <option>All Time</option>
+                            <option>Month</option>
+                            <option>Week</option>
+                            <option>Day</option>
+                        </select>
+                    </div>
+
+                    <div class="overviews__items overview">
+                        <div class="overview__item overview__item--customers">
+                            <div class="overview__item-header">
+                                <p class="overview__item-title">Customers</p>
+                                <p class="overview__item-percent">8%</p>
+                            </div>
+                            <span class="overview__item-numbers">17.578</span>
+                        </div>
+                        <div class="overview__item overview__item--income">
+                            <div class="overview__item-header">
+                                <p class="overview__item-title">Income</p>
+                                <p class="overview__item-percent">3%</p>
+                            </div>
+                            <span class="overview__item-numbers">$45,737,000</span>
+                        </div>
+                    </div>
+
+                    <div class="overviews__experts experts">
+                        <p class="experts__title">Welcome to our <b>online experts</b></p>
+                        <ul class="experts__list">
+                            <li class="experts__item expert">
+                                <img class="expert__photo" src="./img/expert1.jpg" alt="Фото эксперта">
+                                <div class="expert__info">
+                                    <p class="expert__name">Andrew L.</p>
+                                    <p>2 years of online experience</p>
+                                </div>
+                            </li>
+                            <li class="experts__item expert">
+                                <img class="expert__photo" src="./img/expert2.jpg" alt="Фото эксперта">
+                                <div class="expert__info">
+                                    <p class="expert__name">Ray E.</p>
+                                    <p>1 year of online experience</p>
+                                </div>
+                            </li>
+                            <li class="experts__item expert">
+                                <img class="expert__photo" src="./img/expert3.jpg" alt="Фото эксперта">
+                                <div class="expert__info">
+                                    <p class="expert__name">Mariam M.</p>
+                                    <p>3 years of online experience</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="charts">
+                    <table class="charts__container">
+                        <caption class="charts__header">
+                            <h3 class="charts__title">Total Income</h3>
+                            <div class="charts__filters">
+                                <select class="charts__filter filter">
+                                    <option>All Time</option>
+                                    <option>Month</option>
+                                    <option>Week</option>
+                                    <option>Day</option>
+                                </select>
+                            </div>
+                        </caption>
+                        <tbody class="charts__body chart">
+                            <tr class="chart__item">
+                                <td class="chart__month chart__month--january-1"></td>
+                                <th class="chart__item-name" scope="row">Jan</th>
+                            </tr>
+                            <tr class="chart__item">
+                                <td class="chart__month chart__month--february"></td>
+                                <th class="chart__item-name" scope="row">Feb</th>
+                            </tr>
+                            <tr class="chart__item">
+                                <td class="chart__month chart__month--march"></td>
+                                <th class="chart__item-name" scope="row">Mar</th>
+                            </tr>
+                            <tr class="chart__item">
+                                <td class="chart__month chart__month--april"></td>
+                                <th class="chart__item-name" scope="row">Apr</th>
+                            </tr>
+                            <tr class="chart__item">
+                                <td class="chart__month chart__month--may"></td>
+                                <th class="chart__item-name" scope="row">May</th>
+                            </tr>
+                            <tr class="chart__item">
+                                <td class="chart__month chart__month--juny"></td>
+                                <th class="chart__item-name" scope="row">Jun</th>
+                            </tr>
+                            <tr class="chart__item">
+                                <td class="chart__month chart__month--july"></td>
+                                <th class="chart__item-name" scope="row">Jul</th>
+                            </tr>
+                            <tr class="chart__item">
+                                <td class="chart__month chart__month--august"></td>
+                                <th class="chart__item-name" scope="row">Aug</th>
+                            </tr>
+                            <tr class="chart__item">
+                                <td class="chart__month chart__month--september"></td>
+                                <th class="chart__item-name" scope="row">Sep</th>
+                            </tr>
+                            <tr class="chart__item">
+                                <td class="chart__month chart__month--october"></td>
+                                <th class="chart__item-name" scope="row">Oct</th>
+                            </tr>
+                            <tr class="chart__item">
+                                <td class="chart__month chart__month--november"></td>
+                                <th class="chart__item-name" scope="row">Nov</th>
+                            </tr>
+                            <tr class="chart__item">
+                                <td class="chart__month chart__month--december"></td>
+                                <th class="chart__item-name" scope="row">Dec</th>
+                            </tr>
+                            <tr class="chart__item">
+                                <td class="chart__month chart__month--january-2"></td>
+                                <th class="chart__item-name" scope="row">Jan</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <div class="wrapper-right-block">
+                    <section class="products">
+                        <h3 class="products__title">Popular Products</h3>
+                        <ul class="products__list">
+                            <li class="products__item product">
+                                <a class="product__link" href="#">
+                                    <div class="product__icon">
+                                        <img src="./img/product-list/product-a.svg" alt="Продукт A">
+                                    </div>
+                                    <div class="product__description">
+                                        <p class="product__category">Product A</p>
+                                        <h4 class="product__name">Camera Kits</h4>
+                                    </div>
+                                    <p class="product__price">$2772</p>
+                                </a>
+                            </li>
+                            <li class="products__item product">
+                                <a class="product__link" href="#">
+                                    <div class="product__icon">
+                                        <img src="./img/product-list/product-b.svg" alt="Продукт B">
+                                    </div>
+                                    <div class="product__description">
+                                        <p class="product__category">Product B</p>
+                                        <h4 class="product__name">Phone Kits</h4>
+                                    </div>
+                                    <p class="product__price">$983</p>
+                                </a>
+                            </li>
+                            <li class="products__item product">
+                                <a class="product__link" href="#">
+                                    <div class="product__icon">
+                                        <img src="./img/product-list/product-c.svg" alt="Продукт C">
+                                    </div>
+                                    <div class="product__description">
+                                        <p class="product__category">Product C</p>
+                                        <h4 class="product__name">UI Kits</h4>
+                                    </div>
+                                    <p class="product__price">$3242</p>
+                                </a>
+                            </li>
+                            <li class="products__item product">
+                                <a class="product__link" href="#">
+                                    <div class="product__icon">
+                                        <img src="./img/product-list/product-d.svg" alt="Продукт D">
+                                    </div>
+                                    <div class="product__description">
+                                        <p class="product__category">Product D</p>
+                                        <h4 class="product__name">Plugin Kits</h4>
+                                    </div>
+                                    <p class="product__price">$322</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="products__button" type="button">All Products</button>
+                    </section>
+                    <section class="comments">
+                        <h3 class="comments__title">Comments</h3>
+                        <div class="comments__item comment">
+                            <p class="comment__text">Posuere lorem justo, lectus id. Id elit eget facilisis magna pulvinar volutpat bibendum cras nibh.</p>
+                            <p class="comment__date">12 Jan 2020</p>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
